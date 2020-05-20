@@ -15,7 +15,7 @@ client.on('ready', () => {
 client.on('message', message => {
 
     if (message.content === 'cope') {
-       message.channel.send('just cope');
+       message.channel.send("cope " + message.author);
        }
 
 });
