@@ -14,9 +14,9 @@ client.on('ready', () => {
 
 client.on('message', message => {
 
-    if (message.content === 'ping') {
+    if (message.content === 'cope') {
 
-       message.reply('cope');
+       message.channel.send('cope');
 
        }
 
