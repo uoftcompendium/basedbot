@@ -17,6 +17,9 @@ client.on('message', message => {
     if (message.content === 'cope') {
        message.channel.send("cope " + message.author);
        }
+    if (message.content === 'Cope') {
+       message.channel.send("cope " + message.author);
+       }
      if (message.content === 'blackpill') {
        message.channel.send(":blackpill:");
        }
