@@ -5,6 +5,7 @@ const config = require("./config.json");
 client.on('ready', () => {
 
     console.log('I am ready!');
+    console.log(mentionMessage);
 
 });
 
