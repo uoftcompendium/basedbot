@@ -5,8 +5,6 @@ const config = require("./config.json");
 client.on('ready', () => {
 
     console.log('I am ready!');
-    console.log(mentionMessage);
-
 });
 
 client.on("message", async message => {
@@ -86,6 +84,8 @@ client.on("message", async message => {
       mentionMessage.shift()
       mentionMessage = mentionMessage.join(' ')
       message.channel.send ("Notified!");
+      console.log(mentionMessage);
+
   }
     
   if(command === "load_config") {
