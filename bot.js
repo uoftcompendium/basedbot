@@ -85,8 +85,7 @@ client.on("message", async message => {
     message.channel.send("Config loaded. State parameters. <a:CONFIG:714540323577266226>");
   }
     
-  if(command === "enable_`serverLock`") {
-    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+  if(command === "enable_serverLock") {
     // To get the "message" itself we join the `args` back into a string with spaces: 
     if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
