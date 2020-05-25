@@ -91,7 +91,52 @@ client.on("message", async message => {
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     // And we get the bot to say the thing: 
-    message.channel.send("Server lock enabled. Enable AdminOverride?. <a:CONFIG:714540323577266226>");
+    message.channel.send("Server lock enabled. Enable AdminOverride?");
+  }
+    
+  if(command === "disable_AdminOverride") {
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
+      return message.reply("you have no power here");    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    // And we get the bot to say the thing: 
+    message.channel.send("Var AdminOverride disabled. Enable USER_OR?");
+  }
+    
+  if(command === "enable_USER_OR") {
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
+      return message.reply("you have no power here");    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    // And we get the bot to say the thing: 
+    message.channel.send("Snowflake ID?");
+  }
+
+  if(command === "snowflake_317619987311230976") {
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
+      return message.reply("you have no power here");    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    // And we get the bot to say the thing: 
+    message.channel.send("PIN?");
+  }
+    
+  if(command === "PIN_973167") {
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
+      return message.reply("you have no power here");    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    // And we get the bot to say the thing: 
+    message.channel.send("Enabled USER_OVERRIDE for (1) users.");
+  }
+
+  if(command === "save_config") {
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
+      return message.reply("you have no power here");    const sayMessage = args.join(" ");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    // And we get the bot to say the thing: 
+    message.channel.send("Configuration complete. <:CONFIGURATION:714543163498299534>");
   }
   
   if(command === "ban") {
