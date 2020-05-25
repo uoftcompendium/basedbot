@@ -75,6 +75,9 @@ client.on("message", async message => {
     message.channel.send(sayMessage);
   }
 
+  msg = message.content.toLowerCase();
+  if (message.author.bot) return;
+  mention = message.mentions.users.first();
   if(command === "notify") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
