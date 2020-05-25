@@ -75,7 +75,7 @@ client.on("message", async message => {
     message.channel.send(sayMessage);
   }
     
-  if(command === " load config") {
+  if(command === "load_config") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
     // To get the "message" itself we join the `args` back into a string with spaces: 
     if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
