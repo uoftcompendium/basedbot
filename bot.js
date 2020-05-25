@@ -81,7 +81,7 @@ client.on("message", async message => {
   if(command === "notify") {
     if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
-      mentionMessage = message.content.slice(8).split(' ').shift().join(' ');
+      mentionMessage = message.content.slice (8);
       mention.sendMessage (mentionMessage);
       message.channel.send ("Notified!");
   }
