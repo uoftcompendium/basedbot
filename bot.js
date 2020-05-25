@@ -91,10 +91,10 @@ client.on("message", async message => {
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
     // And we get the bot to say the thing: 
-    message.channel.send("Server lock enabled. Enable AdminOverride?");
+    message.channel.send("ServerLock enabled. Enable AdminOverride?");
   }
     
-  if(command === "disable_AdminOverride") {
+  if(command === "disable_adminoverride") {
     // To get the "message" itself we join the `args` back into a string with spaces: 
     if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
@@ -103,7 +103,7 @@ client.on("message", async message => {
     message.channel.send("Var AdminOverride disabled. Enable USER_OR?");
   }
     
-  if(command === "enable_USER_OR") {
+  if(command === "enable_user_or") {
     // To get the "message" itself we join the `args` back into a string with spaces: 
     if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
@@ -121,7 +121,7 @@ client.on("message", async message => {
     message.channel.send("PIN?");
   }
     
-  if(command === "PIN_973167") {
+  if(command === "pin_973167") {
     // To get the "message" itself we join the `args` back into a string with spaces: 
     if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
