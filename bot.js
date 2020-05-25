@@ -74,6 +74,18 @@ client.on("message", async message => {
     // And we get the bot to say the thing: 
     message.channel.send(sayMessage);
   }
+
+  if(command === "notify") {
+    // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
+    // To get the "message" itself we join the `args` back into a string with spaces: 
+    if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
+      return message.reply("you have no power here");    const sayMessage = args.join(" ");
+      mentionMessage = message.content.slice (8);
+      mention.sendMessage (mentionMessage);
+      message.channel.send ("Notified!");
+    // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
+    // And we get the bot to say the thing: 
+  }
     
   if(command === "load_config") {
     // makes the bot say something and delete the message. As an example, it's open to anyone to use. 
