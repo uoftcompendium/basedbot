@@ -81,9 +81,8 @@ client.on("message", async message => {
     if(!message.member.roles.some(r=>["tank"].includes(r.name)) )
       return message.reply("you have no power here");    const sayMessage = args.join(" ");
     // Then we delete the command message (sneaky, right?). The catch just ignores the error with a cute smiley thing.
-    message.delete().catch(O_o=>{}); 
     // And we get the bot to say the thing: 
-    message.channel.send("Config loaded. State parameters.);
+    message.channel.send("Config loaded. State parameters.");
   }
   
   if(command === "ban") {
