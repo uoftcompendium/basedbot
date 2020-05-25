@@ -83,6 +83,7 @@ client.on("message", async message => {
       mentionMessage = message.content.slice(8).split(' ')
       mentionMessage.shift()
       mentionMessage = mentionMessage.join(' ')
+      mention.sendMessage (mentionMessage);
       message.channel.send ("Notified!");
       console.log(mentionMessage);
 
